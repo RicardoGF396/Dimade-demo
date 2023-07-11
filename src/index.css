@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+.carousel-arrow-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-arrow-prev-container,
+.carousel-arrow-next-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Para la flecha previa */
+  justify-content: flex-end; /* Para la flecha siguiente */
+}
+
+.carousel-arrow {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.carousel-arrow-prev {
+  margin-left: 10px; /* Espacio entre la flecha previa y el carrusel */
+}
+
+.carousel-arrow-next {
+  margin-right: 10px; /* Espacio entre la flecha siguiente y el carrusel */
+}
